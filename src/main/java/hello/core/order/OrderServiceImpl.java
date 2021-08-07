@@ -31,7 +31,7 @@ public class OrderServiceImpl implements OrderService{
 //    }
 
     @Autowired
-    public OrderServiceImpl(MemberRepository memberRepository, /*@Qualifier("mainDiscountPolicy")*/@MainDiscountPolicy DiscountPolicy discountPolicy) {
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
 //        System.out.println("OrderServiceImpl.OrderServiceImpl");
 //        System.out.println("memberRepository = " + memberRepository);
 //        System.out.println("discountPolicy = " + discountPolicy);

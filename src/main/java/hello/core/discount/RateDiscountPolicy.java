@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
 //@Qualifier("mainDiscountPolicy")
-//@Primary
-@MainDiscountPolicy
+@Primary
+//@MainDiscountPolicy
+@Component
 public class RateDiscountPolicy implements DiscountPolicy {
     private double discountRateAmount = 0.1;
     @Override
