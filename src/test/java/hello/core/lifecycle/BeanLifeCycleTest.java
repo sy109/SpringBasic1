@@ -6,6 +6,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 public class BeanLifeCycleTest {
 
@@ -17,6 +18,7 @@ public class BeanLifeCycleTest {
     }
 
     @Configuration
+//    @Scope("prototype")
     static class LifeCycleConfig {
         @Bean
         public NetworkClient networkClient() {
