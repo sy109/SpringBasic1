@@ -66,11 +66,11 @@ public class SingletonWithPrototypeTest1 {
         private int count = 0;
         @PostConstruct
         public void init() {
-            System.out.println("PrototypeBean.init");
+            System.out.println("PrototypeBean.init" + this);
         }
         @PreDestroy
         public void destroy() {
-            System.out.println("PrototypeBean.init");
+            System.out.println("PrototypeBean.init" + this);
         }
 
         public void addCount() {
